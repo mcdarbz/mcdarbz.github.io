@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mcdarbz — official website.">
+<title>Mcdarbz | Official Website</title>
+<style>
+:root{--bg:#03050d;--card:rgba(8,18,40,.76);--text:#f7fbff;--muted:#9eb0c9;--blue:#1677ff;--cyan:#00d9ff;--line:rgba(86,170,255,.2)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:radial-gradient(circle at 50% -10%,rgba(0,130,255,.3),transparent 38%),radial-gradient(circle at 10% 35%,rgba(0,216,255,.1),transparent 25%),var(--bg);overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(3,5,13,.7);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.12em}.brand img{width:43px;height:43px;object-fit:cover;border-radius:12px}.brand span{font-size:18px}
+.links{display:flex;gap:28px;color:#b8c7dc;font-size:14px;font-weight:700}.links a:hover{color:#fff}.menu{display:none;background:none;border:0;color:white;font-size:27px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 0 70px;position:relative}.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(0,119,255,.12);filter:blur(70px);top:15%;left:50%;transform:translateX(-50%);pointer-events:none}
+.logo-wrap{position:relative;margin:0 auto 22px;width:min(330px,75vw)}.logo-wrap img{width:100%;display:block;filter:drop-shadow(0 0 30px rgba(0,119,255,.55))}
+.eyebrow,.kicker{display:inline-flex;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(0,119,255,.08);color:#a9ddff;font-size:12px;font-weight:800;letter-spacing:.12em}
+h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-.055em;margin:20px 0}.gradient{background:linear-gradient(90deg,#fff,#65d9ff,#2580ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:auto;color:var(--muted);font-size:18px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;border:1px solid var(--line);font-weight:800;transition:.22s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,130,255,.18)}.primary{background:linear-gradient(135deg,#fff,#bcefff);color:#031021;border:0}.whatsapp{background:#16b95c;border-color:#16b95c;color:#fff}
+section{padding:100px 0}.section-head{max-width:700px;margin-bottom:35px}.kicker{padding:0;border:0;background:none;border-radius:0;color:#58d9ff;text-transform:uppercase;letter-spacing:.15em}
+h2{font-size:clamp(32px,5vw,52px);line-height:1.05;margin:10px 0 14px}.section-head p,.card p,.about p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:27px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(13,29,58,.8),rgba(5,12,28,.72));box-shadow:0 20px 70px rgba(0,90,255,.12);transition:.25s}.card:hover{transform:translateY(-6px);border-color:rgba(65,184,255,.45)}.icon{font-size:30px;margin-bottom:14px}.card h3{font-size:20px;margin-bottom:8px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.about-logo{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:radial-gradient(circle,#08235c,#03050d 68%);box-shadow:0 20px 70px rgba(0,90,255,.18)}.about-logo img{width:100%;display:block}
+.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.social{padding:18px;border:1px solid var(--line);border-radius:17px;background:var(--card);display:flex;align-items:center;gap:12px;font-weight:800;transition:.2s}.social:hover{transform:translateY(-3px);border-color:rgba(0,217,255,.45)}.social b{font-size:22px}
+.contact-box{text-align:center;padding:55px 25px;border-radius:28px;border:1px solid var(--line);background:radial-gradient(circle at 50% 0%,rgba(0,150,255,.18),transparent 55%),rgba(7,16,35,.72);box-shadow:0 20px 70px rgba(0,90,255,.18)}.phone{font-size:24px;font-weight:900;margin:20px 0;color:#c9f5ff}
+footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 0;color:#8294ae;text-align:center;font-size:13px}.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.links{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 5%;background:#050a16;flex-direction:column;gap:17px;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.grid,.socials,.about{grid-template-columns:1fr}section{padding:75px 0}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#home"><img src="logo.png" alt="Mcdarbz logo"><span>MCDARBZ</span></a>
+<button class="menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+<div class="links" id="links"><a href="#home" onclick="closeMenu()">Home</a><a href="#about" onclick="closeMenu()">About</a><a href="#services" onclick="closeMenu()">Services</a><a href="#socials" onclick="closeMenu()">Socials</a><a href="#contact" onclick="closeMenu()">Contact</a></div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="container">
+<div class="logo-wrap reveal"><img src="logo.png" alt="Mcdarbz"></div>
+<span class="eyebrow reveal">OFFICIAL MCDARBZ WEBSITE</span>
+<h1 class="reveal">Welcome to <span class="gradient">Mcdarbz.</span></h1>
+<p class="reveal">A premium digital home for Mcdarbz — connect, discover, and stay updated.</p>
+<div class="actions reveal"><a class="btn primary" href="#about">Explore Website</a><a class="btn whatsapp" href="https://wa.me/639517383769" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+</div></section>
+
+<section id="about"><div class="container about">
+<div class="about-logo reveal"><img src="logo.png" alt="Mcdarbz logo"></div>
+<div class="reveal"><span class="kicker">About Mcdarbz</span><h2>Bold ideas. Digital presence. One brand.</h2><p>Welcome to the official Mcdarbz website. This space brings together my online presence, projects, services, and ways to connect with me.</p><div class="actions" style="justify-content:flex-start"><a class="btn whatsapp" href="https://wa.me/639517383769" target="_blank" rel="noopener">Chat on WhatsApp</a></div></div>
+</div></section>
+
+<section id="services"><div class="container">
+<div class="section-head reveal"><span class="kicker">What I Do</span><h2>Creative & digital work.</h2><p>These sections are ready to customize with your actual services, projects, or business.</p></div>
+<div class="grid"><article class="card reveal"><div class="icon">⚡</div><h3>Digital Projects</h3><p>Modern websites, online projects, and digital experiences.</p></article><article class="card reveal"><div class="icon">🎨</div><h3>Creative Work</h3><p>Branding, content, ideas, and creative projects built to stand out.</p></article><article class="card reveal"><div class="icon">🤝</div><h3>Collaboration</h3><p>Connect for opportunities, partnerships, and interesting projects.</p></article></div>
+</div></section>
+
+<section id="socials"><div class="container">
+<div class="section-head reveal"><span class="kicker">Connect</span><h2>Follow Mcdarbz online.</h2><p>Tap any platform to connect.</p></div>
+<div class="socials">
+<a class="social reveal" href="https://www.facebook.com/share/1F1kkcysJB/" target="_blank" rel="noopener"><b>f</b> Facebook</a>
+<a class="social reveal" href="https://www.tiktok.com/@mcdarbz0" target="_blank" rel="noopener"><b>♪</b> TikTok</a>
+<a class="social reveal" href="#contact"><b>◎</b> Instagram</a>
+<a class="social reveal" href="https://wa.me/639517383769" target="_blank" rel="noopener"><b>◉</b> WhatsApp</a>
+</div>
+<p style="margin-top:18px;color:#71839d;font-size:13px">Send your Instagram profile URL to activate the Instagram button.</p>
+</div></section>
+
+<section id="contact"><div class="container"><div class="contact-box reveal">
+<span class="kicker">Get In Touch</span><h2>Let's connect.</h2><p style="color:var(--muted)">For inquiries, collaborations, or a quick chat, contact Mcdarbz directly on WhatsApp.</p>
+<div class="phone">+63 951 738 3769</div><a class="btn whatsapp" href="https://wa.me/639517383769" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+</div></div></section>
+</main>
+<footer>© <span id="year"></span> Mcdarbz. All rights reserved.</footer>
+<script>
+function toggleMenu(){document.getElementById('links').classList.toggle('open')}
+function closeMenu(){document.getElementById('links').classList.remove('open')}
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
