@@ -13,6 +13,9 @@
             padding: 2rem;
             margin: 0;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .logo {
             max-width: 400px;
@@ -22,63 +25,63 @@
             font-size: 3rem;
             margin-bottom: 0.5rem;
         }
-        .subtitle {
+        p {
             font-size: 1.2rem;
-            opacity: 0.8;
-            margin-bottom: 3rem;
+            opacity: 0.9;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .button-group {
+        .btn-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
         }
         .btn {
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
+            display: inline-block;
+            width: 260px;
+            padding: 16px 24px;
+            font-size: 18px;
             font-weight: bold;
-            border-radius: 8px;
             text-decoration: none;
-            transition: 0.3s;
+            border-radius: 12px;
+            transition: transform 0.2s ease;
         }
-        .btn-primary {
-            background: white;
+        .btn:hover {
+            transform: scale(1.03);
+        }
+        .btn-explore {
+            background: #ffffff;
             color: #003366;
-        }
-        .btn-primary:hover {
-            background: #f0f0f0;
         }
         .btn-whatsapp {
             background: #25d366;
             color: white;
         }
-        .btn-whatsapp:hover {
-            background: #20bd5a;
-        }
         .btn-book {
-            background: linear-gradient(135deg, #0099ff, #00ccff);
+            background: #00b4ff;
             color: white;
         }
-        .btn-book:hover {
-            background: linear-gradient(135deg, #0088ee, #00bbee);
+        .btn-meta {
+            background: #3b82f6;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="logo">
-        <img src="logo.png" alt="MCDARbz Logo" style="max-width: 100%; height: auto;">
-    </div>
+    <img src="logo.png" alt="MCDARbz Logo" class="logo">
 
     <h1>Welcome to MCDARbz.</h1>
-    <p class="subtitle">A premium digital home for Mcdarbz — connect, discover, and stay updated.</p>
+    <p>A premium digital home for Mcdarbz — connect, discover, and stay updated.</p>
 
-    <div class="button-group">
-        <a href="#" class="btn btn-primary">Explore Website</a>
-        <a href="#" class="btn btn-whatsapp">WhatsApp</a>
-        <a href="book.html" class="btn btn-book">📖 Read My Book</a>
-        <a href="https://www.meta.ai/share/a/e8e6ea84-56a2-43e4-9208-3f98f817b01a" target="_blank" class="btn" style="background: linear-gradient(135deg, #0668E1, #3498ff); color: white;">🤖 Meta AI</a>
+    <div class="btn-container">
+        <a href="book.html" target="_blank" class="btn btn-explore">Explore Website</a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+        <a href="book.html" target="_blank" class="btn btn-book">📖 Read My Book</a>
+        <a href="#" target="_blank" class="btn btn-meta">🤖 Meta AI</a>
     </div>
 
 </body>
