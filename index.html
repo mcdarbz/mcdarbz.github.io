@@ -28,7 +28,9 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(90,200,200,0.35); }
-    .btn.secondary { background: rgba(90,200,255,0.15); border: 1px solid #5ac8ff; }
+    .btn.inactive {
+      display: none; /* Hides the button completely */
+    }
   </style>
 </head>
 <body>
@@ -41,7 +43,7 @@
 
   <div class="links">
     <a href="book.html" class="btn">📖 Read The Comprehension Root Primer</a>
-    <a href="explore.html" class="btn secondary">🔍 Explore the Framework</a>
+    <a href="explore.html" class="btn inactive">🔍 Explore the Framework</a>
   </div>
 
 </body>
