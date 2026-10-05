@@ -1,88 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCDARbz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #001a33, #003366);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .logo {
-            max-width: 400px;
-            margin: 0 auto 2rem;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 2.5rem;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            align-items: center;
-        }
-        .btn {
-            display: inline-block;
-            width: 260px;
-            padding: 16px 24px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 12px;
-            transition: transform 0.2s ease;
-        }
-        .btn:hover {
-            transform: scale(1.03);
-        }
-        .btn-explore {
-            background: #ffffff;
-            color: #003366;
-        }
-        .btn-whatsapp {
-            background: #25d366;
-            color: white;
-        }
-        .btn-book {
-            background: #00b4ff;
-            color: white;
-        }
-        .btn-meta {
-            background: #3b82f6;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCDARbz — Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background: linear-gradient(135deg, #0a2342 0%, #13457c 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .logo { max-width: 280px; margin-bottom: 30px; }
+    h1 { font-size: 3rem; margin-bottom: 10px; }
+    h1 span { color: #4ecdc4; }
+    .tagline { font-size: 1.2rem; color: #b8c7d9; margin-bottom: 50px; max-width: 500px; }
+    .btn {
+      display: block; width: 280px; margin: 12px auto; padding: 18px;
+      border-radius: 12px; font-size: 1.1rem; font-weight: 600;
+      text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
+    .btn-explore { background: #4ecdc4; color: #0a2342; }
+    .btn-book { background: #0099ff; color: white; }
+    .btn-whatsapp { background: #25d366; color: white; }
+    .footer { margin-top: 50px; color: #6b9dc2; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
+  <img src="logo.png" alt="MCDARbz" class="logo">
 
-    <img src="logo.png" alt="MCDARbz Logo" class="logo">
+  <h1>Welcome to <span>MCDARbz</span></h1>
+  <p class="tagline">A premium digital home — connect, discover, and stay updated.</p>
 
-    <h1>Welcome to MCDARbz.</h1>
-    <p>A premium digital home for Mcdarbz — connect, discover, and stay updated.</p>
+  <a href="explore.html" class="btn btn-explore">🚀 Explore Website</a>
+  <a href="book.html" class="btn btn-book">📖 Read My Book</a>
+  <a href="https://wa.me/639527383769" class="btn btn-whatsapp">💬 Contact on WhatsApp</a>
 
-    <div class="btn-container">
-        <a href="book.html" target="_blank" class="btn btn-explore">Explore Website</a>
-        <a href="https://wa.me/yourwhatsapplink" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
-        <a href="book.html" target="_blank" class="btn btn-book">📖 Read My Book</a>
-        <a href="#" target="_blank" class="btn btn-meta">🤖 Meta AI</a>
-    </div>
-
+  <p class="footer">© 2026 MCDARbz — All Rights Reserved</p>
 </body>
 </html>
