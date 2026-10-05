@@ -1,23 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Comprehension Root – Preview</title>
+  <title>The Comprehension Root — A Primer by Mcdarbz</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 2rem; background: #f9f9f9; }
-    .box { text-align:center; margin-top:3rem; padding:2rem; background:#fff8e6; border-radius:8px; border:2px solid #d4a017; }
-    a { display:inline-block; margin-top:1rem; padding:0.7rem 1.5rem; background:#d4a017; color:#000; text-decoration:none; border-radius:5px; font-weight:bold; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Segoe UI, Roboto, sans-serif; }
+    html, body { height:100%; overflow:hidden; background:#050a1a; color:#fff; }
+
+    /* Logo Watermark — uses your logo.png */
+    .bg-logo {
+      position: fixed; inset:0;
+      background: url('logo.png') center/50% no-repeat;
+      opacity: 0.08; z-index:0; pointer-events:none;
+    }
+
+    .slides { position:relative; height:100%; cursor:pointer; }
+
+    .slide {
+      position:absolute; inset:0; padding:6vh 8vw;
+      display:flex; flex-direction:column; justify-content:center;
+      opacity:0; transition:opacity 0.5s ease;
+      pointer-events:none; z-index:1;
+    }
+    .slide.active { opacity:1; pointer-events:auto; }
+
+    h1 { font-size:clamp(2rem,6vw,4rem); color:#5ac8ff; margin-bottom:0.3em; }
+    h2 { font-size:clamp(1.4rem,3.5vw,2.2rem); color:#8ed9ff; margin-bottom:1em; border-bottom:1px solid rgba(90,200,255,0.3); padding-bottom:0.5em; }
+    h3 { font-size:clamp(1.1rem,2.5vw,1.6rem); color:#bfe8ff; margin:1em 0 0.5em; }
+    p, li { font-size:clamp(1rem,2vw,1.2rem); line-height:1.7; color:#e6f3ff; max-width:900px; }
+    ul, ol { margin:1em 0 1em 2em; }
+    .title-block { text-align:center; }
+    .author { color:#7fc8ff; margin:1.5em 0; font-size:1.1em; }
+    .quote { font-style:italic; color:#9ed2ff; margin-top:2em; font-size:1.2em; }
+    .nav-hint { position:absolute; bottom:4vh; right:6vw; color:#5ac8ff; opacity:0.6; font-size:0.9rem; }
+    .back-link { position:absolute; top:3vh; left:6vw; color:#5ac8ff; text-decoration:none; z-index:10; }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center;">The Comprehension Root</h1>
-  <p style="text-align:center;">A Complete Theory of Learning</p>
-  
-  <div class="box">
-    <h2>📕 Complete Edition – Full Reader</h2>
-    <p>20 Pages · Core Comic + Volumes 1–4</p>
-    <a href="The_Comprehension_Root_20_Page_Preview.pdf" target="_blank">📖 Open Full Reader →</a>
+
+<div class="bg-logo"></div>
+<a href="index.html" class="back-link">← Back to Home</a>
+
+<div class="slides" id="slides" onclick="nextSlide()">
+
+  <!-- Slide 1 — Title -->
+  <div class="slide active">
+    <div class="title-block">
+      <h1>THE COMPREHENSION ROOT</h1>
+      <h2 style="border:none; color:#bfe8ff; font-weight:normal;">A PRIMER — From Experience to Understanding</h2>
+      <p class="author">Darwin Paloma Gumacal, MBA • writing as <strong>Mcdarbz</strong></p>
+      <p class="quote">"The root is comprehension.<br>The branches are our developing abilities."</p>
+    </div>
+    <p class="nav-hint">Click anywhere to continue →</p>
   </div>
+
+  <!-- Slide 2 — Preface -->
+  <div class="slide">
+    <h2>Preface</h2>
+    <p>Every person is a learner.</p>
+    <p style="margin:1em 0;">We learn from school, families, relationships, work, successes, failures, and everyday experiences.</p>
+    <h3>Three Core Questions:</h3>
+    <ul>
+      <li>What makes information become understanding?</li>
+      <li>How does understanding become ability?</li>
+      <li>How does a person keep learning throughout life?</li>
+    </ul>
+    <p style="margin-top:1.5em; font-style:italic;">This primer is not to be believed — it is to be explored.</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 3 — Contents -->
+  <div class="slide">
+    <h2>Contents</h2>
+    <ul style="list-style:none; margin:0;">
+      <li style="margin:0.8em 0;"><strong>Part I —</strong> The Beginning</li>
+      <li style="margin:0.8em 0;"><strong>Part II —</strong> Understanding the Root</li>
+      <li style="margin:0.8em 0;"><strong>Part III —</strong> Branches of Human Capability</li>
+      <li style="margin:0.8em 0;"><strong>Part IV —</strong> The CRT in a Changing World</li>
+      <li style="margin:0.8em 0;"><strong>Part V —</strong> Exploring the CRT</li>
+    </ul>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 4 — Part I -->
+  <div class="slide">
+    <h2>Part I — The Beginning</h2>
+    <h3>How the CRT Began</h3>
+    <ul>
+      <li>Started with writing, not theory</li>
+      <li>Articles, poetry, prose, music — <em>"Find My Groove," "Sister's Strength," "Diamonds in the Dark"</em></li>
+      <li>Discovered a shared process:</li>
+    </ul>
+    <p style="margin:1.5em 0; padding:1em; background:rgba(90,200,255,0.08); border-radius:8px; text-align:center; font-weight:bold;">
+      Experience → Impression → Thought → Question → Connection → Understanding
+    </p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 5 — First Spark -->
+  <div class="slide">
+    <h2>The First Spark</h2>
+    <ol>
+      <li style="margin:0.6em 0;"><strong>Ordinary experience</strong> → impression</li>
+      <li style="margin:0.6em 0;"><strong>Writing begins</strong> → thoughts take form</li>
+      <li style="margin:0.6em 0;"><strong>Many forms emerge</strong> → poetry, prose, music</li>
+      <li style="margin:0.6em 0;"><strong>Patterns connect</strong> → shared deeper meaning</li>
+      <li style="margin:0.6em 0;"><strong>Comprehension revealed</strong> → the common thread</li>
+      <li style="margin:0.6em 0;"><strong>The CRT emerges</strong> → framework takes root</li>
+    </ol>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 6 — Part II: Root -->
+  <div class="slide">
+    <h2>Part II — Understanding the Root</h2>
+    <h3>What Is Comprehension?</h3>
+    <ul>
+      <li><strong>Knowing</strong> = information received</li>
+      <li><strong>Comprehending</strong> = grasping meaning & relationships</li>
+      <li><strong>Applying</strong> = using understanding in action</li>
+    </ul>
+    <h3 style="margin-top:1.5em;">The Tree Analogy</h3>
+    <p style="text-align:center; font-weight:bold; color:#5ac8ff; margin:1em 0;">
+      Root → Trunk → Branches → Leaves → Fruit<br>
+      Comprehension → Knowledge → Abilities → Skills → Contributions
+    </p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 7 — Learning Cycle -->
+  <div class="slide">
+    <h2>The Learning Cycle</h2>
+    <p style="font-weight:bold; text-align:center; color:#5ac8ff; margin:1.5em 0; line-height:2;">
+      EXPERIENCE → OBSERVATION → QUESTION → CONNECTION →<br>
+      COMPREHENSION → ABILITY → APPLICATION → FEEDBACK → NEW EXPERIENCE
+    </p>
+    <p style="font-style:italic;">Not rigid — we revisit, revise, and deepen throughout life.</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 8 — Branches -->
+  <div class="slide">
+    <h2>Part III — Branches of Human Capability</h2>
+    <ul>
+      <li>📚 <strong>Learning & Education</strong> — ask "why," not just "what"</li>
+      <li>🧩 <strong>Problem-Solving</strong> — understand before solving</li>
+      <li>🎨 <strong>Creativity</strong> — connect the unconnected</li>
+      <li>❤️ <strong>Relationships</strong> — seek understanding before judgment</li>
+      <li>💼 <strong>Work & Professional</strong> — turn info into action</li>
+      <li>🌱 <strong>Personal Growth</strong> — "What can I comprehend from this experience?"</li>
+    </ul>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 9 — AI & Human -->
+  <div class="slide">
+    <h2>Part IV — CRT in a Changing World</h2>
+    <h3>Human–AI Partnership</h3>
+    <ul>
+      <li>AI generates information — but information ≠ comprehension</li>
+      <li>AI expands the <strong>branches</strong> — analysis, ideas, assistance</li>
+      <li>Human comprehension remains the <strong>root</strong> — questioning, judging, verifying</li>
+    </ul>
+    <p style="margin-top:1.5em; font-style:italic; text-align:center;">AI handles information • Humans provide meaning</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 10 — Specialization -->
+  <div class="slide">
+    <h2>From General to Specialized</h2>
+    <p>No one begins as an expert. Specialization grows from:</p>
+    <ul style="margin-top:1em;">
+      <li>Accumulated experiences</li>
+      <li>Deepening questions</li>
+      <li>Richer connections</li>
+      <li>Practice, application, feedback</li>
+    </ul>
+    <p style="margin-top:1.5em; font-style:italic;">Every specialist began as a learner at their root.</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 11 — Applying CRT -->
+  <div class="slide">
+    <h2>Part V — Exploring the CRT</h2>
+    <h3>Your Reflection Guide</h3>
+    <ul>
+      <li>What do I know but not yet fully understand?</li>
+      <li>What experience taught me the most?</li>
+      <li>What mistake changed my thinking?</li>
+      <li>Am I solving the real problem — or only its symptoms?</li>
+      <li>When I use AI, do I understand and verify the answer?</li>
+    </ul>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 12 — Research -->
+  <div class="slide">
+    <h2>Toward Research & Improvement</h2>
+    <p>The CRT is open to investigation — not settled conclusion.</p>
+    <ul style="margin-top:1em;">
+      <li>Does deliberate comprehension improve retention?</li>
+      <li>Does connecting new info to prior knowledge help transfer?</li>
+      <li>Can CRT-based methods improve real-world problem-solving?</li>
+      <li>How does comprehension develop across a lifetime?</li>
+    </ul>
+    <p style="margin-top:1.5em; font-style:italic;">The theory is shaped by evidence, testing, and open inquiry.</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 13 — Invitation -->
+  <div class="slide">
+    <h2>The Invitation</h2>
+    <p style="margin:1em 0;">The future of the CRT is not the author's alone to decide.</p>
+    <ul>
+      <li>Learners — apply it</li>
+      <li>Teachers — adapt it</li>
+      <li>Professionals — test it</li>
+      <li>Researchers — investigate it</li>
+      <li>Critics — challenge it</li>
+    </ul>
+    <p style="margin-top:1.5em; font-style:italic;">The CRT began with writing. It grows through connection.</p>
+    <p class="nav-hint">Click to continue →</p>
+  </div>
+
+  <!-- Slide 14 — Final -->
+  <div class="slide">
+    <div class="title-block">
+      <h2 style="border:none; font-size:clamp(1.5rem,4vw,2.5rem);">Final Thought</h2>
+      <h3 style="color:#5ac8ff; font-size:clamp(1.2rem,3vw,1.8rem);">Do not read this only to understand the CRT.<br>Use the CRT to understand yourself.</h3>
+      <p class="quote" style="margin-top:3em;">The root is comprehension.<br>The branches are our developing abilities.<br>The fruit is what we create, solve, understand, and contribute.</p>
+      <p class="author" style="margin-top:2.5em;">— Darwin Paloma Gumacal, MBA • <strong>Mcdarbz</strong></p>
+      <a href="index.html" style="display:inline-block; margin-top:2rem; padding:0.8rem 2rem; background:rgba(90,200,255,0.2); color:#fff; border-radius:8px; text-decoration:none;">← Back to MCDARBZ Home</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function showSlide(n) {
+  slides[current].classList.remove('active');
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add('active');
+}
+
+function nextSlide() { showSlide(current + 1); }
+
+// Keyboard support: Right Arrow / Space / Enter
+document.addEventListener('keydown', e => {
+  if (['ArrowRight',' ','Enter'].includes(e.key)) nextSlide();
+});
+</script>
+
 </body>
 </html>
