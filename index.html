@@ -3,47 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCDARbz — Home</title>
+  <title>MCDARBZ — The Comprehension Root</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Segoe UI, Roboto, sans-serif; }
     body {
-      background: linear-gradient(135deg, #0a2342 0%, #13457c 100%);
-      color: white;
+      background: #050a1a;
+      color: #fff;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      text-align: center;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 2rem; text-align: center;
     }
-    .logo { max-width: 280px; margin-bottom: 30px; }
-    h1 { font-size: 3rem; margin-bottom: 10px; }
-    h1 span { color: #4ecdc4; }
-    .tagline { font-size: 1.2rem; color: #b8c7d9; margin-bottom: 50px; max-width: 500px; }
+    .logo {
+      width: 220px; height: 220px;
+      background: url('logo.png') center/contain no-repeat;
+      margin-bottom: 2rem; opacity: 0.95;
+    }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); color: #5ac8ff; margin-bottom: 0.5rem; }
+    .tagline { font-size: 1.2rem; color: #9ed2ff; margin-bottom: 3rem; max-width: 500px; }
+    .links { display: flex; flex-direction: column; gap: 1.2rem; width: 100%; max-width: 340px; }
     .btn {
-      display: block; width: 280px; margin: 12px auto; padding: 18px;
-      border-radius: 12px; font-size: 1.1rem; font-weight: 600;
-      text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+      display: block; padding: 1rem 2rem; border-radius: 12px;
+      background: linear-gradient(135deg, #0a4a8f, #0099ff);
+      color: #fff; text-decoration: none; font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
-    .btn-explore { background: #4ecdc4; color: #0a2342; }
-    .btn-book { background: #0099ff; color: white; }
-    .btn-whatsapp { background: #25d366; color: white; }
-    .btn-meta { background: #4285f4; color: white; }
-    .footer { margin-top: 50px; color: #6b9dc2; font-size: 0.9rem; }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(90,200,200,0.35); }
+    .btn.secondary { background: rgba(90,200,255,0.15); border: 1px solid #5ac8ff; }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="MCDARbz" class="logo">
-  <h1>Welcome to <span>MCDARbz</span></h1>
-  <p class="tagline">A premium digital home — connect, discover, and stay updated.</p>
 
-  <a href="explore.html" class="btn btn-explore">🚀 Explore Website</a>
-  <a href="book.html" class="btn btn-book">📖 Read My Book</a>
-  <a href="https://wa.me/639527383769" class="btn btn-whatsapp">💬 Contact on WhatsApp</a>
-  <a href="https://www.meta.ai/share/a/84ce3b0a-2b2a-454a-8572-fb4b5f778c30" class="btn btn-meta">🤖 Meta AI</a>
+  <div class="logo"></div>
+  <h1>Welcome to MCDARBZ</h1>
+  <p class="tagline">A premium digital home for Mcdarbz — connect, discover, and stay updated.</p>
 
-  <p class="footer">© 2026 MCDARbz — All Rights Reserved</p>
+  <div class="links">
+    <a href="book.html" class="btn">📖 Read The Comprehension Root Primer</a>
+    <a href="explore.html" class="btn secondary">🔍 Explore the Framework</a>
+    <a href="https://wa.me/your-number" class="btn secondary">💬 Connect via WhatsApp</a>
+  </div>
+
 </body>
 </html>
